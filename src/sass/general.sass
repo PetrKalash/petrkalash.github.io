@@ -1,0 +1,135 @@
+@font-face
+	font-family: 'Cera Round Pro'
+	src: url('../fonts/ceraroundpro-webfont.woff2') format('woff2'), url('../fonts/ceraroundpro-webfont.woff') format('woff')
+	font-weight: normal
+	font-style: normal
+body
+	background-color: #fff
+	font-family: "Open Sans", sans serif
+.header
+	display: flex
+	align-items: center
+	min-height: 75px
+	.header_blocks
+		display: flex
+		align-items: center
+	.logo
+		.header_logo
+			width: 60%
+			height: auto
+	.menu
+		display: flex
+		justify-content: center
+		.menu_items
+			display: flex
+			flex-wrap: wrap
+			gap: 25px
+			list-style: none
+			.menu_link_item
+				text-transform: uppercase
+				text-decoration: none
+				font-weight: 600
+				color: #000
+	.phone
+		display: flex
+		gap: 35px
+.slider
+	display: flex
+	align-items: center
+	min-height: 600px
+	background: url("../img/slider.jpg") center center/cover no-repeat
+	&_block
+		width: 35%
+		&_string
+			font-size: 14px
+			font-weight: 500
+			letter-spacing: 2.8px
+			text-transform: uppercase
+			text-align: center
+			color: black
+		&_header
+			margin-top: 10px
+			font-size: 50px
+			font-weight: 600
+			text-align: center
+			letter-spacing: 0.1px
+			color: white
+		&_btn
+			@include button_first()
+			display: block
+			margin: 0 auto
+			margin-top: 30px
+.featured
+	margin-top: 140px
+	min-height: 512px
+	&_header
+		font-size: 36px
+		font-weight: bold
+		text-align: center
+		text-transform: uppercase
+		color: #000
+	.row
+		margin-top: 60px
+	&_item
+		width: 100%
+		height: auto
+		background-color: #f0f2f1
+	&_name
+		font-size: 14px
+		margin-top: 25px
+		text-align: center
+		color: #888
+	&_price
+		font-size: 18px
+		margin-top: 30px
+		font-weight: 700
+		text-align: center
+		color: #000
+.discount
+	display: flex
+	align-items: center
+	margin-top: 140px
+	min-height: 400px
+	background-image: linear-gradient(to top, #e9e1d8, #f7f2eb, #e4dacf)
+	&_block
+		width: 45%
+		&_header
+			font-size: 50px
+			font-style: italic
+			text-align: center
+			text-transform: uppercase
+			color: #2a2a2a
+		&_string
+			margin-top: 20px
+			font-size: 20px
+			font-weight: 100
+			text-align: center
+			text-transform: uppercase
+			color: #4a4a4a
+		&_btn
+			@include button_first()
+			display: block
+			margin: 0 auto
+			margin-top: 30px
+.popular
+	margin-top: 140px
+	min-height: 600px
+	&_header
+		font-size: 30px
+		text-transform: uppercase
+		text-align: center
+// .footer
+// 	min-height: 380px
+// 	background-image: $light-gradient
+// 	&_social
+// 		width: 15%
+// 		display: flex
+// 		justify-content: space-between
+// 		&_item
+// 			display: flex
+// 			justify-content: center
+// 			align-items: center
+// 			width: 30px
+// 			height: 30px
+// 			padding: 8px 10px
+// 			background-color: #fff

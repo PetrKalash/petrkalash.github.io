@@ -1,0 +1,45 @@
+@media (max-width: 1200px)
+	.slider
+		min-height: 400px
+		top: -80px
+	.slider_block
+		width: 35%
+	.slider_block_header
+		font-size: 35px
+	.slider_block_btn
+		margin-top: 15px
+	.featured_blocks
+		margin-top: 40px
+@media (max-width: 991px)
+	.header .phone
+		display: none
+	.logo
+		display: none
+	.slider
+		min-height: 300px
+	.featured_blocks
+		margin-top: 40px
+	.slider_block
+		width: 25%
+	.slider_block_header
+		font-size: 20px
+@media (max-width: 767px)
+	.slider
+		min-height: 200px
+	.header
+		.menu
+			.menu_items
+				position: fixed
+				flex-direction: column
+				align-items: center
+				top: 0
+				right: -100%
+				width: 30%
+				background-color: rgba(0, 0, 0, .8)
+				transition: 0.6s all
+				.menu_link_item
+					color: white
+					font-weight: 300
+			.menu_active
+				right: 0
+@media (max-width: 575px)
